@@ -85,6 +85,12 @@
 				$("<br />").appendTo("#contenido");
 			}
 			
+			$(document).ready(function () {
+            setInterval(function iframeRefresh() {
+                $(".adsTerra").attr("src","https://www.effectiveratecpm.com/d1whr7pny?key=fde16c9c85c670d08b7c7fa47ce9e634"); 
+            }, 1000*300);
+        });
+			
 			$(document).ready(function() {
 			 $("#ancla").click(function() {
 			 	buscar= "#" + $("#texto").val().replace(/ /g, "").toLowerCase();
